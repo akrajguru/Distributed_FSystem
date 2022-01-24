@@ -1,0 +1,1 @@
+master election -https://learning.oreilly.com/library/view/zookeeper/9781449361297/ch04.html#idm140361985671216
