@@ -93,7 +93,7 @@ public class FNSystem extends FileStoreImplBase {
 	private static String control_path;
 	private static String myNode;
 	static CountDownLatch countdown;
-	private static final String myIp= "172.24.9.105:9015";
+	private static final String myIp= "myIp";
 	private static String leaderIp = "";
 	private static String leaderName = "";
 	private static boolean isNameServer=false;
@@ -210,7 +210,7 @@ public class FNSystem extends FileStoreImplBase {
 	public static void createNode() throws IOException, KeeperException, InterruptedException {
 		String newline = System.getProperty("line.separator");
        
-		byte[] bytes = ("172.24.9.105:9015" +newline+"Ajinkya Rajguru").getBytes();
+		byte[] bytes = ("myIp" +newline+"Ajinkya Rajguru").getBytes();
 
 		 myNode = zookeeper.create(control_path + "/AJFS", bytes, ZooDefs.Ids.OPEN_ACL_UNSAFE,
 				CreateMode.EPHEMERAL_SEQUENTIAL);
