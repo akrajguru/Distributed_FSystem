@@ -65,7 +65,7 @@ public class NameServer extends NameServerImplBase  {
 	private static String leaderIp = "";
 	private static String leaderName = "";
 	private static boolean isNameServer = false;
-	private static final String myIp = "172.24.9.105:9017";
+	private static final String myIp = "myIP";
 	private static Stat stat;
 	private static ConcurrentHashMap<String, FileDetails> maxVersionOfFilePresent = new ConcurrentHashMap<String, FileDetails>();
 	private static int maximumVersion=1;
@@ -257,7 +257,7 @@ public class NameServer extends NameServerImplBase  {
 
 		String newline = System.getProperty("line.separator");
 
-		byte[] bytes = ("172.24.9.105:9017" + newline + "Ajinkya Rajguru").getBytes();
+		byte[] bytes = ("myIp" + newline + "Ajinkya Rajguru").getBytes();
 		try {
 			String leader = zookeeper.create(control_path + "/leader", bytes, ZooDefs.Ids.OPEN_ACL_UNSAFE,
 					CreateMode.EPHEMERAL);
