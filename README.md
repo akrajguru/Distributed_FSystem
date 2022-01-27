@@ -12,5 +12,5 @@ Zookeeper is used by the client, nameserver and the filestores to watch for any 
 
 It is based on the famous research paper by Robbert van Renesse and Fred B. Schneider https://www.cs.cornell.edu/home/rvr/papers/OSDI04.pdf
 
-It makes use of grpc to interact with other replicas in the chain
+It makes use of grpc to interact with other replicas in the chain.
 Zookeeper is used to determine the predecessor or successor or whether the current replica is a head or a tail.
